@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Home page - University</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    font-family: "Times New Roman", serif;
+    margin: 0;
+    color: black;
+    background: white;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 36px;
+    margin: 30px 0 10px;
+  }
+
+  .container {
+    width: 86%;
+    max-width: 920px;
+    margin: 0 auto 40px;
+    border: 2px solid black;
+    padding: 18px 22px;
+  }
+
+  .header .logo {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+
+  .nav {
+    text-align: center;
+    margin-bottom: 18px;
+  }
+  .nav a {
+    margin: 0 18px;
+    text-decoration: underline;
+    color: black;
+    font-weight: normal;
+  }
+
+  .main {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    padding-top: 6px;
+    padding-bottom: 16px;
+  }
+
+  .col {
+    flex: 1;
+    text-align: left;
+  }
+
+  .col + .col {
+    border-left: 1px solid gray;
+    padding-left: 28px;
+  }
+
+  .col h3 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 1px solid gray;
+    padding-bottom: 6px;
+  }
+
+  .item {
+    margin: 14px 0;
+  }
+  .item strong {
+    display: block;
+    margin-bottom: 4px;
+  }
+
+  .footer {
+    border-top: 1px solid black;
+    padding-top: 12px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 12px;
+  }
+
+  a.email {
+    color: blue;
+    text-decoration: underline;
+  }
+
+  @media (max-width: 720px) {
+    .main { flex-direction: column; }
+    .col + .col { border-left: none; padding-left: 0; margin-top: 12px; }
+    .container { width: 94%; padding: 14px; }
+  }
+</style>
+</head>
+<body>
+
+  <h1>Home page</h1>
+
+  <div class="container">
+    <div class="header">
+      <div class="logo">Logo - University name</div>
+      <div class="nav">
+        <a href="#">Presentation</a>
+        <a href="#">Studies</a>
+        <a href="#">Staff</a>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="col">
+        <h3>News</h3>
+
+        <div class="item">
+          <strong>News 1 – Date</strong>
+          <div>Description</div>
+        </div>
+
+        <div class="item">
+          <strong>News 2 – Date</strong>
+          <div>Description</div>
+        </div>
+      </div>
+
+      <div class="col">
+        <h3>Announcements</h3>
+
+        <div class="item">
+          <strong>Open course 1</strong>
+          <div>Description</div>
+        </div>
+
+        <div class="item">
+          <strong>Open course 2</strong>
+          <div>Description</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      Contact: <a class="email" href="mailto:info@university.com">info@university.com</a><br>
+      (c) University, 2011
+    </div>
+  </div>
+
+</body>
+</html>
